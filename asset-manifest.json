@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/business-plan-writer/static/css/main.e6c13ad2.css",
+    "main.js": "/business-plan-writer/static/js/main.8d190750.js",
+    "static/js/453.c7a94cc2.chunk.js": "/business-plan-writer/static/js/453.c7a94cc2.chunk.js",
+    "static/media/ranlogo.png": "/business-plan-writer/static/media/ranlogo.c4c2e15006c1fad5fe2d.png",
+    "index.html": "/business-plan-writer/index.html",
+    "main.e6c13ad2.css.map": "/business-plan-writer/static/css/main.e6c13ad2.css.map",
+    "main.8d190750.js.map": "/business-plan-writer/static/js/main.8d190750.js.map",
+    "453.c7a94cc2.chunk.js.map": "/business-plan-writer/static/js/453.c7a94cc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.8d190750.js"
+  ]
+}
