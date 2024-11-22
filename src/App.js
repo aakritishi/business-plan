@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './component/Header';
+import Sidebar from './component/SideBar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './component/home/Home';  
+import BusinessForm from './component/inside-menu/BusinessForm'; 
+import BusinessPlan from './component/inside-menu/BusinessPlan';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="flex h-screen bg-gray-100">
+        <Sidebar />
+
+        <div className="flex-1 md:ml-64 ml-0 mt-14">
+          <Header />
+          
+          {/* Main content */}
+          <main className="p-6 ">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/business-form" element={<BusinessForm />} />
+              <Route path='/business-plan' element={<BusinessPlan/>} />
+            </Routes>
+          </main>
+        </div>
+
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
